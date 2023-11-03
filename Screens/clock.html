@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="../CSS/stylesC.css">
+    <script src="https://kit.fontawesome.com/3b4b146db6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+
+     
+        <div class="timer">
+            <p class="quote-el"  id="quote-el"></p>
+            <p id="display-time">0:00</p>
+        </div>
+
+
+
+        <div class="button-container">
+            <button class="btn" id="work-btn">Start</button>
+            <button class="btn" id="resume-btn">Continue</button>
+            <button class="btn" id="pause-btn">Pause</button>
+            <button class="btn" id="reset-btn">Reset</button>
+            <button class="btn-break" id="short-btn">Short Break</button>
+            <button class="btn-break" id="long-btn">Long Break</button>
+            <button class="btn-settings" id="settings-btn"><span class="material-icons-outlined">Settings</span></button>
+        </div>
+
+    
+        <button class="btn-close-settings"  id="close-settings"><span class="material-icons-outlined">close</span></button>
+
+      
+        <div class="adjust-screen" id="adjust-screen">
+            <h2>Make it as per your wish:</h2>
+
+           
+            <div class="work-time">Work Till:
+                <input type="number" max="180" min="10" value="10" id="wt-timer">mins
+            </div>
+
+          
+            <div class="short-break">Short Break For:
+                <input type="number" max="30" min="5" value="5" id="sb-timer">mins
+            </div>
+
+            <div class="long-break">Long Break For:
+                <input type="number" max="60" min="15" value="15" id="lb-timer">mins
+            </div>
+
+        </div>
+    </div>
+    <script src="../js/scriptC.js"></script>
+</body>
+</html>
